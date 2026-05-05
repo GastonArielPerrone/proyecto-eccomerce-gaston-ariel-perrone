@@ -1,0 +1,72 @@
+[
+        {
+            "id": 1,
+            "name": "Botines de fútbol GAP+ sport",
+            "description": "Botines de fútbol de alta calidad. Es la primera versión de esta gama.",
+            "price": 100,
+            "image": "/images/products/boats_black-white_GAPsport.png"
+        },
+        {
+            "id": 2,
+            "name": "Botines de futbol GAP+sport Lion",
+            "description": "Botines de fútbol de alta calidad. Temática de león representando la agilidad del jugador. Muy resistente a los golpes y remates. La mejor costura",
+            "price": 200,
+            "image": "/images/products/boats_Lion_GAPsport.png"
+        },
+        {
+            "id": 3,
+            "name": "Pelota de básquetbol GAP+ sport +Turbo",
+            "description": "Pelota de básquetbol con tecnología Turbo",
+            "price": 300,
+            "image": "/images/products/ball_basketball_+turbo.png"
+        },
+        {
+            "id": 4,
+            "name": "Pelota de fútbol GAP+ sport +Power",
+            "description": "Pelota de fútbol con tecnología Turbo",
+            "price": 400,
+            "image": "/images/products/ball_football_+power.png"
+        },
+        {
+            "id": 5,
+            "name": "Raqueta de tenis GAP+ sport +Fast",
+            "description": "Raqueta de tenis para jugadores profesionales",
+            "price": 400,
+            "image": "/images/products/racket_tennis_+fast.png"
+        },
+        {
+            "id": 6,
+            "name": "Calza musculosa Eclipse mujer GAP+ sport",
+            "description": "Calza musculosa deportiva para mujer, modelo Eclipse",
+            "price": 250,
+            "image": "/images/products/calza_musculosa_lumina_f_GAPsport.png"
+        },
+        {
+            "id": 7,
+            "name": "Calza musculosa Aura mujer GAP+ sport",
+            "description": "Calza musculosa deportiva para mujer, modelo Aura",
+            "price": 280,
+            "image": "/images/products/calza_musculosa_aura_f_GAPsport.png"
+        },
+        {
+            "id": 8,
+            "name": "Remera + Pollera Aurora mujer tenis GAP+ sport",
+            "description": "Conjunto de tenis para mujer, modelo Aurora",
+            "price": 350,
+            "image": "/images/products/remera_pollera_f_aurora_GAPsport.png"
+        },
+        {
+            "id": 9,
+            "name": "Remera short Elevate hombre tenis GAP+ sport",
+            "description": "Conjunto de tenis para hombre, modelo Elevate",
+            "price": 380,
+            "image": "/images/products/remera_short_elevate_m_GAPsport.png"
+        },
+        {
+            "id": 10,
+            "name": "Conjunto Impulse F1 hombre GAP+ sport",
+            "description": "Conjunto de F1 para hombre, modelo Eclipse",
+            "price": 400,
+            "image": "/images/products/conjunto_f1_m_impulse_GAPsport.png"
+        }
+]

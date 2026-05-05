@@ -1,0 +1,36 @@
+:root {
+    --text-white: #fff;
+    --text-h: #333;
+    --text-hover: #555;
+}
+
+nav {
+    background-color: var(--text-h);
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--text-white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-white);
+}
+
+li:hover {
+    background-color: var(--text-hover);
+}

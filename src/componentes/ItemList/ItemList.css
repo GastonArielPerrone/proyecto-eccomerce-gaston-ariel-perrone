@@ -1,0 +1,15 @@
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.item-list > a {
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    text-decoration: none;
+    color: inherit;
+}

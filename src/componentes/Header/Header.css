@@ -1,0 +1,15 @@
+:root {
+    --text-white: #fff;
+    --text-h: #333;
+}
+
+.logo {
+    width: 155px;
+}
+
+header {
+    display: flex;
+    flex-direction:column ;
+    justify-content: start;
+    padding: auto;
+}
