@@ -9,6 +9,7 @@ export const ItemDetailContainer = () => {
     const {id} = useParams();
 
     useEffect(() => {
+        setLoading(true);
         fetch("/data/products.json")
         .then(res => res.json())
         .then(data =>{
@@ -18,11 +19,12 @@ export const ItemDetailContainer = () => {
                 return;
             }
 
+            setItemDetail(null);
             throw new Error("Elemento no encontrado");
         })
         .catch(err => console.log(err))
         .finally(() => setLoading(false))
-    }, []);
+    }, [id]);
 
    if (loading) return <p>Cargando...</p>;
 
