@@ -1,17 +1,21 @@
 import { useEffect, useState } from "react";
+import { getProducts } from "../../services/productsServices";
 import { ItemList } from "../ItemList/ItemList";
 
 const ItemListContainer = () => {
+    const [loading, setLoading] = useState(true);
     const [products, setProducts] = useState([]);
+    
     useEffect(() => {
-        fetch('/data/products.json')
-        .then(response => response.json())
+        setLoading(true);
+        getProducts()
         .then(data => setProducts(data))
-        .catch(error => console.error('Error fetching products:', error))
-        .finally(() => {
-            console.log('Fetch attempt completed');
-        });
+        .catch(error => console.error('Hubo un error:', error))
+        .finally(() => {setLoading(false)});
     }, []);
+
+    if (loading) return <p>Cargando...</p>;
+    
 
     return <ItemList products={products}/>
 }
