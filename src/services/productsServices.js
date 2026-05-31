@@ -1,8 +1,10 @@
-import { db } from "../firebase/config";
 import {
     collection,
+    doc,
+    getDoc,
     getDocs
-} from "../firebase/firestore";
+} from "firebase/firestore";
+import { db } from "../firebase/config";
 
 const productsRef = collection(db, "products");
 

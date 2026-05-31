@@ -17,7 +17,11 @@ const ItemListContainer = () => {
     if (loading) return <p>Cargando...</p>;
     
 
-    return <ItemList products={products}/>
+    return (
+        <section>
+            <ItemList products={products}/>
+        </section>
+    )
 }
 
 export default ItemListContainer;
