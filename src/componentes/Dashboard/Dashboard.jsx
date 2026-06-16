@@ -6,6 +6,8 @@ export const Dashboard = () => {
     const { logout } = useAuth();
 
   return (
+    <>
+    <img src="../public/GAPsport_logo.png" alt="Logo GAPsport+" width={200}></img>
     <div className="dashboard">
       <header>
         <h2>Panel de administración</h2>
@@ -37,5 +39,6 @@ export const Dashboard = () => {
         <p>Desde este panel podés gestionar los productos de la tienda.</p>
       </section>
     </div>
+    </>
   );
 }
