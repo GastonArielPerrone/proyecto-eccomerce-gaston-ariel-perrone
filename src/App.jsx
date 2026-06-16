@@ -4,6 +4,7 @@ import { CartView } from './componentes/Cart/CartView'
 import { Dashboard } from './componentes/Dashboard/Dashboard'
 import { ItemDetailContainer } from './componentes/ItemDetailContainer/ItemDetailContainer'
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
+import { Login } from './componentes/Login/Login'
 import { ProtectedRoute } from './componentes/ProtectedRoute/ProtectedRoute'
 import { ProductFormContainer } from './componentes/adminComponents/ProductFormContainer'
 import { ProductFormSuccess } from './componentes/adminComponents/ProductFormSucces'
@@ -20,8 +21,8 @@ function App() {
             <Route path="/product/:id" element={<ItemDetailContainer />} />
             <Route path="/carrito" element={<CartView />} />
           </Route>
-          <Route path="admin/login" element={<Login />} />
-            <Route path="/admin" element={<ProtectedRoute>
+          <Route path="/admin/login" element={<Login />} />
+          <Route path="/admin" element={<ProtectedRoute>
               <AdminLayout />
             </ProtectedRoute>
           } >

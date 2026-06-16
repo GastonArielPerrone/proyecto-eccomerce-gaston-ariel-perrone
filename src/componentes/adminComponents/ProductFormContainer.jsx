@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { createProduct } from "../../services/productsServices";
 import { uploadImage } from "../../services/uploadImage";
+import { validateProduct } from "../../utils/validateProduct";
 import "./ProductFormContainer.css";
 import { ProductFormUI } from "./ProductFormUI";
 
@@ -51,7 +52,7 @@ export const ProductFormContainer = () => {
 
             setProduct({name: "", price: "", category: "", description: "" });
             setFile(null);
-            navigate(`/success/${id}`);
+            navigate(`/admin/products/success/${id}`);
         } catch (error) {
             setErrors({ general: error.message });
         }
@@ -62,9 +63,9 @@ export const ProductFormContainer = () => {
             product={product}
             errors={errors}
             loading={loading}
-            onchange={handleChange}
-            onfilechange={handleFileChange}
-            onsubmit={handleSubmit}
+            onChange={handleChange}
+            onFileChange={handleFileChange}
+            onSubmit={handleSubmit}
         />
     )
 }

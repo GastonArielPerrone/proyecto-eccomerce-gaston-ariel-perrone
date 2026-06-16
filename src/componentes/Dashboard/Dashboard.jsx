@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
+import "./Dashboard.css";
 
 export const Dashboard = () => {
     const { logout } = useAuth();
@@ -22,17 +24,11 @@ export const Dashboard = () => {
         <h3>Acciones rápidas</h3>
 
         <div className="actions-grid">
-          <Link to="/admin/products/new" className="action-card">
-            ➕ Cargar
-          </Link>
+          <button><Link to="/admin/products/new" className="action-card">➕ Cargar</Link></button>
 
-          <Link to="#" className="action-card disabled">
-            ✏️ Modificar
-          </Link>
+          <button><Link to="#" className="action-card disabled">✏️ Modificar</Link></button>
 
-          <Link to="#" className="action-card disabled">
-            🗑️ Eliminar
-          </Link>
+          <button><Link to="#" className="action-card disabled">🗑️ Eliminar</Link></button>
         </div>
       </section>
 
